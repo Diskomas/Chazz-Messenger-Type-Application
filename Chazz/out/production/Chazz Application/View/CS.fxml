@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="310.0" prefWidth="377.0" style="-fx-background-color: #1f2029;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ChannelController">
+   <children>
+      <Group>
+         <children>
+               <ScrollPane fx:id="sp_main" fitToWidth="true" layoutY="9.0" prefHeight="256.0" prefWidth="321.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: TRANSPARENT;">
+                  <content>
+                     <VBox fx:id="vbox_messages" cacheShape="false" centerShape="false" disable="true" prefHeight="252.0" prefWidth="317.0" scaleShape="false" snapToPixel="false" style="-fx-background-color: #1f2029; -fx-border-color: TRANSPARENT;">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></VBox>
+                  </content>
+               </ScrollPane>
+            <Button fx:id="button_send" layoutX="277.0" layoutY="275.0" style="-fx-background-color: TRANSPARENT; -fx-border-radius: 5; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="send" />
+            <TextField fx:id="tf_message" layoutX="-4.0" layoutY="276.0" prefHeight="26.0" prefWidth="270.0" promptText="Type a message..." style="-fx-background-color: TRANSPARENT; -fx-border-width: 1; -fx-border-color: WHITE; -fx-border-radius: 5; -fx-text-fill: white;" />
+            <Label layoutX="1.0" layoutY="-23.0" style="-fx-text-fill: white;" text="Computer Science Channel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="Image_send" layoutX="225.0" layoutY="-22.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE; -fx-border-radius: 5;" text="Send Image" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </Button>
+         </children>
+      </Group>
+      <AnchorPane fx:id="anchorPane" prefHeight="0.0" prefWidth="0.0" />
+   </children>
+</HBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="290.0" style="-fx-background-color: #1f2029;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+    <children>
+        <Button layoutX="109.0" layoutY="217.0" mnemonicParsing="false" onAction="#RegisterAccount" style="-fx-background-color: TRNASPARENT; -fx-border-color: #6b6c6f; -fx-border-radius: 5;" text="REGISTER" textAlignment="CENTER" textFill="#c6c6c6">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <TextField fx:id="Login_Password" layoutX="70.0" layoutY="173.0" promptText="Password" style="-fx-background-color: #000000;" />
+        <TextField fx:id="Login_Username" layoutX="71.0" layoutY="128.0" promptText="Username" style="-fx-background-color: #000000;" />
+      <Label layoutX="60.0" layoutY="32.0" text="CHAZZ" textFill="#c0c0c0">
+         <font>
+            <Font name="Berlin Sans FB" size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="Register_Label" alignment="CENTER" layoutX="17.0" layoutY="99.0" prefHeight="17.0" prefWidth="253.0" textFill="#ff5757b9" />
+      <Label layoutX="51.0" layoutY="259.0" onMouseClicked="#BackTologin" text="Already have an account? click me!" textFill="#a1a1a1" />
+    </children>
+</AnchorPane>

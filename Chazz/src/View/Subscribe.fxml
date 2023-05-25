@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="310.0" prefWidth="377.0" style="-fx-background-color: #1f2029;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <children>
+      <Group>
+         <children>
+            <Button fx:id="JoinBtn" layoutX="220.0" layoutY="189.0" onAction="#Subscriber" style="-fx-background-color: TRANSPARENT; -fx-border-radius: 5; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="Join" />
+            <Label fx:id="DeniedLabel" alignment="CENTER" layoutX="85.0" layoutY="102.0" prefHeight="41.0" prefWidth="309.0" text="Access Denied" textAlignment="CENTER" textFill="#ff6262">
+               <font>
+                  <Font name="Calibri" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="SubText" alignment="CENTER" layoutX="81.0" layoutY="151.0" prefHeight="17.0" prefWidth="317.0" text="You need to join this channel to see messages" textAlignment="CENTER" textFill="#d0d0d0" />
+         </children>
+      </Group>
+   </children>
+</HBox>
